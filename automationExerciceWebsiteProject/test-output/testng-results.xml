@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-24T16:18:05 CET" name="Default suite" finished-at="2022-11-24T16:19:44 CET" duration-ms="98472">
+    <groups>
+    </groups>
+    <test started-at="2022-11-24T16:18:05 CET" name="Default test" finished-at="2022-11-24T16:19:44 CET" duration-ms="98472">
+      <class name="com.automationExerciceWebsiteProject.Test.RegisterUserTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.RegisterUserTest@34123d65]" started-at="2022-11-24T16:18:06 CET" name="beforeMethod" finished-at="2022-11-24T16:19:11 CET" duration-ms="64662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="registration(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.automationExerciceWebsiteProject.Test.RegisterUserTest@34123d65]" started-at="2022-11-24T16:19:11 CET" name="registration" data-provider="readData" finished-at="2022-11-24T16:19:44 CET" duration-ms="33161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mrs]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sonia12]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sonia17@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Sonia123]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[19-févr.-1980]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[newsletter-optin]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Sonia]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[Ben Mohamed]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[ESN]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[12 rue des orangers, Sousse]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Canada]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[Quebec]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[Montreal]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[12256.0]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[1.23456789E8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registration -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.RegisterUserTest@34123d65]" started-at="2022-11-24T16:19:44 CET" name="afterMethod" finished-at="2022-11-24T16:19:44 CET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.automationExerciceWebsiteProject.Test.RegisterUserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
