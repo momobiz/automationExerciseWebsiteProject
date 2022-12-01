@@ -8,11 +8,36 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">98 472</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">56,793</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automationExerciceWebsiteProject.Test.RegisterUserTest</td><td><a href="#m0">registration</a></td><td rowspan="1">1669303151259</td><td rowspan="1">33161</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPassword</td><td><a href="#m0">loginWithValidcredentials</a></td><td rowspan="1">1669900143635</td><td rowspan="1">17021</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPassword</td><td><a href="#m1">loginWithInvalidCredential</a></td><td rowspan="1">1669900112053</td><td rowspan="1">26585</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">com.automationExerciceWebsiteProject.Test.RegisterUserTest#registration</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th><th>Parameter #7</th><th>Parameter #8</th><th>Parameter #9</th><th>Parameter #10</th><th>Parameter #11</th><th>Parameter #12</th><th>Parameter #13</th><th>Parameter #14</th><th>Parameter #15</th><th>Parameter #16</th></tr><tr class="param stripe"><td>Mrs</td><td>sonia12</td><td>sonia17@gmail.com</td><td>Sonia123</td><td>19-févr.-1980</td><td>newsletter-optin</td><td>Sonia</td><td>Ben Mohamed</td><td>ESN</td><td>12 rue des orangers, Sousse</td><td> </td><td>Canada</td><td>Quebec</td><td>Montreal</td><td>12256.0</td><td>1.23456789E8</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPassword#loginWithValidcredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#header &gt; div &gt; div &gt; div &gt; div.col-sm-8 &gt; div &gt; ul &gt; li:nth-child(10) &gt; a&quot;}
+  (Session info: chrome=107.0.5304.123)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;MOHAMEDALI&apos;, ip: &apos;192.168.1.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [28bbf028a64b1c7351ca94dbc6524202, findElement {using=css selector, value=#header &gt; div &gt; div &gt; div &gt; div.col-sm-8 &gt; div &gt; ul &gt; li:nth-child(10) &gt; a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.123, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\moham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65218}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65218/devtoo..., se:cdpVersion: 107.0.5304.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 28bbf028a64b1c7351ca94dbc6524202
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at com.automationExerciceWebsiteProject.Page.BasePage.findWebElement(BasePage.java:36)
+	at com.automationExerciceWebsiteProject.Page.UserHomePage.loggedInAsUsername(UserHomePage.java:13)
+	at com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPassword.loginWithValidcredentials(LoginUserWithCorrectEmailAndPassword.java:37)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPassword#loginWithInvalidCredential</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

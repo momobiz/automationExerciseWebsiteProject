@@ -13,7 +13,7 @@ public class HomePage extends BasePage{
 	
 	public HomePage() {
 		launchBrowser();
-		driver.get("http://automationexercise.com");
+		driver.get("https://automationexercise.com/");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		

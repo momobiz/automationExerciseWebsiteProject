@@ -7,6 +7,8 @@ import java.util.Properties;
 import java.util.regex.Pattern;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 
 import com.automationExerciceWebsiteProject.Page.AccountCreatedPage;
@@ -65,6 +67,18 @@ public abstract class BaseTest {
 		}
 		return String.valueOf(monthIndex);
 
+	}
+
+	@BeforeMethod
+	public void beforeMethod() {
+		homePage = new HomePage();
+		
+
+	}
+
+	@AfterMethod
+	public void afterMethod() {
+//		deleteAccountPage.closeWindow();
 	}
 
 }

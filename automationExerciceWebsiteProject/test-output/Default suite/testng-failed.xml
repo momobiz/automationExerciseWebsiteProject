@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationExerciceWebsiteProject.Test.RegisterUserTest">
+      <class name="com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPassword">
         <methods>
-          <include name="beforeMethod"/>
           <include name="afterMethod"/>
-          <include name="registration"/>
+          <include name="loginWithValidcredentials"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.automationExerciceWebsiteProject.Test.RegisterUserTest -->
+      </class> <!-- com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPassword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -59,17 +59,17 @@ public class RegisterUserTest extends BaseTest {
 		Assert.assertEquals(deleteAccountPage.accountIsDeleted(), "ACCOUNT DELETED!");
 
 	}
-
-	@BeforeMethod
-	public void beforeMethod() {
-		homePage = new HomePage();
-		
-
-	}
-
-	@AfterMethod
-	public void afterMethod() {
-//		deleteAccountPage.closeWindow();
-	}
+//
+//	@BeforeMethod
+//	public void beforeMethod() {
+//		homePage = new HomePage();
+//		
+//
+//	}
+//
+//	@AfterMethod
+//	public void afterMethod() {
+////		deleteAccountPage.closeWindow();
+//	}
 
 }
