@@ -4,9 +4,9 @@ import org.junit.Assert;
 import org.openxmlformats.schemas.presentationml.x2006.main.CTApplicationNonVisualDrawingProps;
 import org.testng.annotations.Test;
 
-public class LoginUserWithIncorrectEmailAndPassword extends BaseTest{
+public class LoginUserWithIncorrectEmailAndPasswordTest extends BaseTest{
 	
-	public LoginUserWithIncorrectEmailAndPassword() {
+	public LoginUserWithIncorrectEmailAndPasswordTest() {
 		super();
 	}
 	@Test

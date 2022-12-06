@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPassword">
+      <class name="com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest">
         <methods>
           <include name="afterMethod"/>
-          <include name="loginWithValidcredentials"/>
           <include name="beforeMethod"/>
+          <include name="verifyAllProductsAndProductDetailpage"/>
         </methods>
-      </class> <!-- com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPassword -->
+      </class> <!-- com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

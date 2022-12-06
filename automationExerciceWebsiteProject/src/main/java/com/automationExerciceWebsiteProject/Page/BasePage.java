@@ -114,6 +114,23 @@ public abstract class BasePage {
 	    return Character.toUpperCase(str1.charAt(0))+str1.substring(1);
 		
 	}
+	public static void uploadFile(By locator,String path) {
+		findWebElement(locator).sendKeys(path);
+	}
+	public static void clickOkAlertButton() {
+		driver.switchTo().alert().accept();
+		
+	}
+	public WebElement returnActiveElement() {
+		return driver.switchTo().activeElement();
+	}
+	
+	public void scrollToWebElement(By locator) {
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", findWebElement(locator));
+	}
+	
+	
 	
 
 }

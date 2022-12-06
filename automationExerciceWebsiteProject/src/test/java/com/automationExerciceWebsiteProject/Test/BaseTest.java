@@ -10,11 +10,15 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.asserts.SoftAssert;
 
 import com.automationExerciceWebsiteProject.Page.AccountCreatedPage;
 import com.automationExerciceWebsiteProject.Page.DeleteAccountPage;
 import com.automationExerciceWebsiteProject.Page.EnterYourContactInformationPage;
+import com.automationExerciceWebsiteProject.Page.GetInTouchPage;
 import com.automationExerciceWebsiteProject.Page.HomePage;
+import com.automationExerciceWebsiteProject.Page.ProductDetailsPage;
+import com.automationExerciceWebsiteProject.Page.ProductsPage;
 import com.automationExerciceWebsiteProject.Page.SignupLoginPage;
 import com.automationExerciceWebsiteProject.Page.UserHomePage;
 import com.automationExerciceWebsiteProject.utils.ReadDataSheet;
@@ -27,7 +31,11 @@ public abstract class BaseTest {
 	public static AccountCreatedPage accountCreatedPage;
 	public static UserHomePage userHomePage;
 	public static DeleteAccountPage deleteAccountPage;
-
+	public static GetInTouchPage getInTouchPage;
+	public static ProductsPage productsPage;
+	public static ProductDetailsPage productDetailsPage;
+	
+    public static SoftAssert softAssert;
 	public static Properties prop;
 	public static Pattern p;
 
@@ -35,6 +43,7 @@ public abstract class BaseTest {
 
 		try {
 			prop = new Properties();
+			softAssert=new SoftAssert();
 			FileInputStream fs = new FileInputStream("./config/config.properties");
 			prop.load(fs);
 		} catch (IOException e) {

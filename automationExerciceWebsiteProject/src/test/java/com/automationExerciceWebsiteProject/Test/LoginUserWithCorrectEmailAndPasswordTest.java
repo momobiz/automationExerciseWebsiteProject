@@ -5,9 +5,9 @@ import org.testng.annotations.Test;
 
 // Before running this test, make sure that the user is already registred on the website
 
-public class LoginUserWithCorrectEmailAndPassword extends BaseTest{
+public class LoginUserWithCorrectEmailAndPasswordTest extends BaseTest{
 		
-	public LoginUserWithCorrectEmailAndPassword() {
+	public LoginUserWithCorrectEmailAndPasswordTest() {
 		super();
 	}
 	

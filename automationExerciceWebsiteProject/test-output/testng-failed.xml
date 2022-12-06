@@ -6,13 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPassword">
+      <class name="com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest">
         <methods>
-          <include name="afterMethod"/>
           <include name="loginWithValidcredentials"/>
+          <include name="afterMethod"/>
           <include name="beforeMethod"/>
         </methods>
-      </class> <!-- com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPassword -->
+      </class> <!-- com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

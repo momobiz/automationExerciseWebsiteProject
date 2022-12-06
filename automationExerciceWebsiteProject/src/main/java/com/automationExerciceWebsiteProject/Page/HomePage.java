@@ -11,6 +11,9 @@ public class HomePage extends BasePage{
 	By home=By.xpath("//a[contains(text(),'Home')]");
 	By signupLoginButton=By.xpath("//a[contains(text(),'Signup / Login')]");
 	
+	By contactUsButton=By.xpath("//a[contains(text(),'Contact us')]");
+	By productsButton=By.xpath("//a[contains(text(),'Products')]");
+	
 	public HomePage() {
 		launchBrowser();
 		driver.get("https://automationexercise.com/");
@@ -31,6 +34,14 @@ public class HomePage extends BasePage{
 	
 	public boolean newUserSignupIsVisible() {
 		return isDisplayed(signupLoginButton);
+	}
+	public GetInTouchPage clickOnContactUs() {
+		findWebElement(contactUsButton).click();
+		return new GetInTouchPage();
+	}
+	public ProductsPage clickOnProductsButton() {
+		clickOn(productsButton);
+		return new ProductsPage();
 	}
 
 }

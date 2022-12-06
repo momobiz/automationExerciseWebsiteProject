@@ -4,11 +4,15 @@
 	<listeners>
 		<listener class-name="com.automationExerciceWebsiteProject.utils.TestListener"></listener>
 	</listeners>
+
 	<test thread-count="5" name="Test">
 		<classes>
 
-			<class name="com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPassword" />
-			<class name="com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPassword" />
+			<class name="com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest" />
+			<class name="com.automationExerciceWebsiteProject.Test.LogoutUserTest" />
+			<class name="com.automationExerciceWebsiteProject.Test.ContactUsFormTest" />
+			<class name="com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest" />
+			<class name="com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPasswordTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
