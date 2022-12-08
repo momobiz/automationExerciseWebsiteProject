@@ -13,19 +13,21 @@ import org.testng.annotations.DataProvider;
 import org.testng.asserts.SoftAssert;
 
 import com.automationExerciceWebsiteProject.Page.AccountCreatedPage;
+import com.automationExerciceWebsiteProject.Page.CartPage;
 import com.automationExerciceWebsiteProject.Page.DeleteAccountPage;
 import com.automationExerciceWebsiteProject.Page.EnterYourContactInformationPage;
 import com.automationExerciceWebsiteProject.Page.GetInTouchPage;
 import com.automationExerciceWebsiteProject.Page.HomePage;
 import com.automationExerciceWebsiteProject.Page.ProductDetailsPage;
 import com.automationExerciceWebsiteProject.Page.ProductsPage;
+import com.automationExerciceWebsiteProject.Page.SearchResultPage;
 import com.automationExerciceWebsiteProject.Page.SignupLoginPage;
 import com.automationExerciceWebsiteProject.Page.UserHomePage;
 import com.automationExerciceWebsiteProject.utils.ReadDataSheet;
 
 public abstract class BaseTest {
 
-	public static HomePage homePage;
+	public static HomePage homePage=null;
 	public static SignupLoginPage signupLoginPage;
 	public static EnterYourContactInformationPage enterYourContactInformationPage;
 	public static AccountCreatedPage accountCreatedPage;
@@ -34,6 +36,8 @@ public abstract class BaseTest {
 	public static GetInTouchPage getInTouchPage;
 	public static ProductsPage productsPage;
 	public static ProductDetailsPage productDetailsPage;
+	public static SearchResultPage searchResultPage;
+	public static CartPage cartPage;
 	
     public static SoftAssert softAssert;
 	public static Properties prop;
@@ -76,6 +80,16 @@ public abstract class BaseTest {
 		}
 		return String.valueOf(monthIndex);
 
+	}
+	public static int convertStringtoInt(String str) {
+		int i=0;
+		try {
+			i=Integer.parseInt(str);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return i;
 	}
 
 	@BeforeMethod

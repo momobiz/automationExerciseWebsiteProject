@@ -8,39 +8,11 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">218,190</td><td></td><td></td></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">18 839</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest</td><td><a href="#m0">loginWithValidcredentials</a></td><td rowspan="1">1670329116729</td><td rowspan="1">14582</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automationExerciceWebsiteProject.Test.ContactUsFormTest</td><td><a href="#m1">contactUsForm</a></td><td rowspan="1">1670329011565</td><td rowspan="1">33407</td></tr><tr class="passedodd"><td rowspan="1">com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPasswordTest</td><td><a href="#m2">loginWithInvalidCredential</a></td><td rowspan="1">1670329157013</td><td rowspan="1">12492</td></tr><tr class="passedeven"><td rowspan="1">com.automationExerciceWebsiteProject.Test.LogoutUserTest</td><td><a href="#m3">logout</a></td><td rowspan="1">1670328975413</td><td rowspan="1">17038</td></tr><tr class="passedodd"><td rowspan="1">com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest</td><td><a href="#m4">verifyAllProductsAndProductDetailpage</a></td><td rowspan="1">1670328959364</td><td rowspan="1">7922</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.automationExerciceWebsiteProject.Test.AddProductsInCartTest</td><td><a href="#m0">addProductsInCart</a></td><td rowspan="1">1670497834283</td><td rowspan="1">9603</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest#loginWithValidcredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#header &gt; div &gt; div &gt; div &gt; div.col-sm-8 &gt; div &gt; ul &gt; li:nth-child(10) &gt; a&quot;}
-  (Session info: chrome=108.0.5359.73)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
-System info: host: &apos;MOHAMEDALI&apos;, ip: &apos;192.168.1.114&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;12.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [120eb2eed0333e9a389b563cf1c71fab, findElement {using=css selector, value=#header &gt; div &gt; div &gt; div &gt; div.col-sm-8 &gt; div &gt; ul &gt; li:nth-child(10) &gt; a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.73, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\moham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60217}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60217/devtoo..., se:cdpVersion: 108.0.5359.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 120eb2eed0333e9a389b563cf1c71fab
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-	at com.automationExerciceWebsiteProject.Page.BasePage.findWebElement(BasePage.java:36)
-	at com.automationExerciceWebsiteProject.Page.UserHomePage.loggedInAsUsername(UserHomePage.java:14)
-	at com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest.loginWithValidcredentials(LoginUserWithCorrectEmailAndPasswordTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.automationExerciceWebsiteProject.Test.ContactUsFormTest#contactUsForm</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPasswordTest#loginWithInvalidCredential</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.automationExerciceWebsiteProject.Test.LogoutUserTest#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest#verifyAllProductsAndProductDetailpage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.automationExerciceWebsiteProject.Test.AddProductsInCartTest#addProductsInCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

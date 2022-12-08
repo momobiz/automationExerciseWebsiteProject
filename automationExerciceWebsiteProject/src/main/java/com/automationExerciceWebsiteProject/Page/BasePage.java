@@ -50,6 +50,13 @@ public abstract class BasePage {
 		findWebElement(locator).click();
 		
 	}
+	public void clickOn(WebElement webElement) {
+		webElement.click();
+	}
+	public void clickOnWithJavascript(WebElement element) {
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		 js.executeScript("arguments[0].click();", element);
+	}
 	
 	
 	public static boolean isDisplayed(By locator) {
@@ -68,6 +75,11 @@ public abstract class BasePage {
 		actions=new Actions(driver);
 		actions.moveToElement(findWebElement(locator)).build().perform();
 	
+		
+	}
+	public void moveToWebElement(WebElement webElement) {
+		actions=new Actions(driver);
+		actions.moveToElement(webElement).click().build().perform();
 		
 	}
 	public static void scrollDown(int pixelNumber) {
@@ -129,6 +141,19 @@ public abstract class BasePage {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", findWebElement(locator));
 	}
+	public void scrollToWebElement(WebElement webElement) {
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", webElement);
+	}
+	public void moveToWebElementAndClick(By locator) {
+		actions=new Actions(driver);
+		actions.moveToElement(findWebElement(locator)).click().build().perform();
+		
+	}
+
+	
+	
+
 	
 	
 	

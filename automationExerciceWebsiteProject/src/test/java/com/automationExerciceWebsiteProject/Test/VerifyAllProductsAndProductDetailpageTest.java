@@ -16,7 +16,7 @@ public class VerifyAllProductsAndProductDetailpageTest extends BaseTest{
 //	    1. Launch browser
 //	    2. Navigate to url 'http://automationexercise.com'
 //	    3. Verify that home page is visible successfully
-		AssertJUnit.assertTrue(homePage.homePageIsVisibleSuccessfully());
+		softAssert.assertTrue(homePage.homePageIsVisibleSuccessfully());
 		
 //	    4. Click on 'Products' button
 		productsPage=homePage.clickOnProductsButton();
@@ -24,12 +24,12 @@ public class VerifyAllProductsAndProductDetailpageTest extends BaseTest{
 //	    5. Verify user is navigated to ALL PRODUCTS page successfully
 		productsPage.moveToCopyright();
 		productsPage.clickOnSubscriptionEmail();
-		AssertJUnit.assertEquals(productsPage.returnActiveElement().getAttribute("id"),
+		softAssert.assertEquals(productsPage.returnActiveElement().getAttribute("id"),
 								productsPage.idOfSubscribeEmail());
 		
 		
 //	    6. The products list is visible
-		AssertJUnit.assertTrue(productsPage.productListIsVisible());
+		softAssert.assertTrue(productsPage.productListIsVisible());
 		
 //	    7. Click on 'View Product' of first product
 //	    8. User is landed to product detail page

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest">
+      <class name="com.automationExerciceWebsiteProject.Test.AddProductsInCartTest">
         <methods>
           <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="verifyAllProductsAndProductDetailpage"/>
+          <include name="addProductsInCart"/>
         </methods>
-      </class> <!-- com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest -->
+      </class> <!-- com.automationExerciceWebsiteProject.Test.AddProductsInCartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

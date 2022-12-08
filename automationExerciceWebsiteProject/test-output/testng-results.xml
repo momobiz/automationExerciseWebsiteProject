@@ -1,153 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-06T13:15:51 CET" name="Suite" finished-at="2022-12-06T13:19:29 CET" duration-ms="218190">
+  <suite started-at="2022-12-08T12:10:25 CET" name="Default suite" finished-at="2022-12-08T12:10:43 CET" duration-ms="18839">
     <groups>
     </groups>
-    <test started-at="2022-12-06T13:15:51 CET" name="Test" finished-at="2022-12-06T13:19:29 CET" duration-ms="218190">
-      <class name="com.automationExerciceWebsiteProject.Test.ContactUsFormTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.ContactUsFormTest@15bbf42f]" started-at="2022-12-06T13:16:32 CET" name="beforeMethod" finished-at="2022-12-06T13:16:51 CET" duration-ms="19112" status="PASS">
+    <test started-at="2022-12-08T12:10:25 CET" name="Default test" finished-at="2022-12-08T12:10:43 CET" duration-ms="18839">
+      <class name="com.automationExerciceWebsiteProject.Test.AddProductsInCartTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.AddProductsInCartTest@359f7cdf]" started-at="2022-12-08T12:10:25 CET" name="beforeMethod" finished-at="2022-12-08T12:10:34 CET" duration-ms="9206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="contactUsForm()[pri:0, instance:com.automationExerciceWebsiteProject.Test.ContactUsFormTest@15bbf42f]" started-at="2022-12-06T13:16:51 CET" name="contactUsForm" finished-at="2022-12-06T13:17:24 CET" duration-ms="33407" status="PASS">
+        <test-method signature="addProductsInCart()[pri:0, instance:com.automationExerciceWebsiteProject.Test.AddProductsInCartTest@359f7cdf]" started-at="2022-12-08T12:10:34 CET" name="addProductsInCart" finished-at="2022-12-08T12:10:43 CET" duration-ms="9603" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contactUsForm -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.ContactUsFormTest@15bbf42f]" started-at="2022-12-06T13:17:24 CET" name="afterMethod" finished-at="2022-12-06T13:17:24 CET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.automationExerciceWebsiteProject.Test.ContactUsFormTest -->
-      <class name="com.automationExerciceWebsiteProject.Test.LogoutUserTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.LogoutUserTest@2dde1bff]" started-at="2022-12-06T13:16:07 CET" name="beforeMethod" finished-at="2022-12-06T13:16:15 CET" duration-ms="8108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="logout()[pri:0, instance:com.automationExerciceWebsiteProject.Test.LogoutUserTest@2dde1bff]" started-at="2022-12-06T13:16:15 CET" name="logout" finished-at="2022-12-06T13:16:32 CET" duration-ms="17038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logout -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.LogoutUserTest@2dde1bff]" started-at="2022-12-06T13:16:32 CET" name="afterMethod" finished-at="2022-12-06T13:16:32 CET" duration-ms="1" status="PASS">
+        </test-method> <!-- addProductsInCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.AddProductsInCartTest@359f7cdf]" started-at="2022-12-08T12:10:43 CET" name="afterMethod" finished-at="2022-12-08T12:10:43 CET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.automationExerciceWebsiteProject.Test.LogoutUserTest -->
-      <class name="com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest@68c72235]" started-at="2022-12-06T13:15:51 CET" name="beforeMethod" finished-at="2022-12-06T13:15:59 CET" duration-ms="8019" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyAllProductsAndProductDetailpage()[pri:0, instance:com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest@68c72235]" started-at="2022-12-06T13:15:59 CET" name="verifyAllProductsAndProductDetailpage" finished-at="2022-12-06T13:16:07 CET" duration-ms="7922" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAllProductsAndProductDetailpage -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest@68c72235]" started-at="2022-12-06T13:16:07 CET" name="afterMethod" finished-at="2022-12-06T13:16:07 CET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.automationExerciceWebsiteProject.Test.VerifyAllProductsAndProductDetailpageTest -->
-      <class name="com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest@550ee7e5]" started-at="2022-12-06T13:17:24 CET" name="beforeMethod" finished-at="2022-12-06T13:18:36 CET" duration-ms="71755" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="loginWithValidcredentials()[pri:0, instance:com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest@550ee7e5]" started-at="2022-12-06T13:18:36 CET" name="loginWithValidcredentials" finished-at="2022-12-06T13:18:51 CET" duration-ms="14582" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(10) > a"}
-  (Session info: chrome=108.0.5359.73)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'MOHAMEDALI', ip: '192.168.1.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [120eb2eed0333e9a389b563cf1c71fab, findElement {using=css selector, value=#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(10) > a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.73, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\moham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60217}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60217/devtoo..., se:cdpVersion: 108.0.5359.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 120eb2eed0333e9a389b563cf1c71fab]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(10) > a"}
-  (Session info: chrome=108.0.5359.73)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.0.0', revision: '3a21814679'
-System info: host: 'MOHAMEDALI', ip: '192.168.1.114', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [120eb2eed0333e9a389b563cf1c71fab, findElement {using=css selector, value=#header > div > div > div > div.col-sm-8 > div > ul > li:nth-child(10) > a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.73, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\moham\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60217}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60217/devtoo..., se:cdpVersion: 108.0.5359.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 120eb2eed0333e9a389b563cf1c71fab
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at com.automationExerciceWebsiteProject.Page.BasePage.findWebElement(BasePage.java:36)
-at com.automationExerciceWebsiteProject.Page.UserHomePage.loggedInAsUsername(UserHomePage.java:14)
-at com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest.loginWithValidcredentials(LoginUserWithCorrectEmailAndPasswordTest.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithValidcredentials -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest@550ee7e5]" started-at="2022-12-06T13:18:51 CET" name="afterMethod" finished-at="2022-12-06T13:18:51 CET" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.automationExerciceWebsiteProject.Test.LoginUserWithCorrectEmailAndPasswordTest -->
-      <class name="com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPasswordTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPasswordTest@5f9b2141]" started-at="2022-12-06T13:18:51 CET" name="beforeMethod" finished-at="2022-12-06T13:19:17 CET" duration-ms="25480" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="loginWithInvalidCredential()[pri:0, instance:com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPasswordTest@5f9b2141]" started-at="2022-12-06T13:19:17 CET" name="loginWithInvalidCredential" finished-at="2022-12-06T13:19:29 CET" duration-ms="12492" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginWithInvalidCredential -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPasswordTest@5f9b2141]" started-at="2022-12-06T13:19:29 CET" name="afterMethod" finished-at="2022-12-06T13:19:29 CET" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.automationExerciceWebsiteProject.Test.LoginUserWithIncorrectEmailAndPasswordTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- com.automationExerciceWebsiteProject.Test.AddProductsInCartTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
