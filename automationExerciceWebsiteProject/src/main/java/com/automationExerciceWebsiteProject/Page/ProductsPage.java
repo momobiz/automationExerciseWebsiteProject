@@ -61,7 +61,7 @@ public class ProductsPage extends BasePage {
 	}
 	public void addProductToCart(int productNumber) {
 		String str="./child::div[@class='col-sm-4'][%s]";
-		String str2=str.format(str,productNumber);
+		String str2=String.format(str,productNumber);
 		
 		WebElement product=findWebElement(featureItems).findElement(By.xpath(str2));
 		scrollToWebElement(product);

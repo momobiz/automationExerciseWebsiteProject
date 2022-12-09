@@ -27,13 +27,17 @@ public class CartPage extends BasePage{
 			String price= w.findElement(By.xpath("./child::td[3]/p")).getAttribute("innerHTML").substring(3).trim();
 			String quantity=w.findElement(By.xpath("./child::td[4]/button")).getAttribute("innerHTML");
 			String total=w.findElement(By.xpath("./child::td[5]/p")).getAttribute("innerHTML").substring(3).trim();
-			productsInfo.add(price+","+quantity+","+total);
+			String productName=w.findElement(By.xpath("./child::td[2]/h4/a")).getAttribute("innerHTML");
+			
+			productsInfo.add(price+","+quantity+","+total+","+productName);
 			
 			
 		}
 		return productsInfo;
 		
+		
 	}
+	
 	
 	
 

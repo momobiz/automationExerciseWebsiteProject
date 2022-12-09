@@ -3,6 +3,7 @@ package com.automationExerciceWebsiteProject.Page;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 
 
@@ -13,6 +14,9 @@ public class HomePage extends BasePage{
 	
 	By contactUsButton=By.xpath("//a[contains(text(),'Contact us')]");
 	By productsButton=By.xpath("//a[contains(text(),'Products')]");
+	
+
+	By featureItems=By.xpath("//div[@class='features_items']");
 	
 	public HomePage() {
 		launchBrowser();
@@ -42,6 +46,19 @@ public class HomePage extends BasePage{
 	public ProductsPage clickOnProductsButton() {
 		clickOn(productsButton);
 		return new ProductsPage();
+	}
+	public ProductDetailsPage viewProductDetail(int productNumber) {
+		
+		String str="./child::div[@class='col-sm-4'][%s]";
+		String str2=String.format(str,productNumber);
+		
+		WebElement product=findWebElement(featureItems).findElement(By.xpath(str2));
+		scrollToWebElement(product);
+		moveToWebElement(product);
+		WebElement viewProductLink=findWebElement(featureItems).findElement(By.xpath(str2+"/div/div[2]/ul/li/a"));
+		clickOn(viewProductLink);
+		
+		return new ProductDetailsPage();
 	}
 
 }

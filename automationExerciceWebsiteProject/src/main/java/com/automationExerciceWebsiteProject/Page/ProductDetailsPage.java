@@ -8,6 +8,12 @@ import org.openqa.selenium.WebElement;
 
 public class ProductDetailsPage extends BasePage{
 	 By productInformation=By.xpath("//div[@class='product-information']");
+	 By addYourReview=By.xpath("//a[contains(text(),'Write Your Review')]");
+	 By quantity=By.id("quantity");
+	 By addCartButton=By.xpath("//button[@type='button']");
+	 
+	 By modalContent=By.xpath("//div[@class='modal-content']");
+	 By viewCartButton=By.xpath("//u[contains(text(),'View Cart')]");
 	 
 	 public boolean productNameIsVisible() {
 		 WebElement name=findWebElement(productInformation).findElement(By.xpath("child::h2"));
@@ -34,6 +40,28 @@ public class ProductDetailsPage extends BasePage{
 		 WebElement brand=findWebElement(productInformation).findElement(By.xpath("child::p[4]/b"));
 		 return !brand.getText().isEmpty();	
 	 }
+	 public boolean addYourReviewIsVisible() {
+		 return isDisplayed(addYourReview);
+	 }
+	 
+	 public void increaseQuantity(String value) {
+		 findWebElement(quantity).clear();
+		 findWebElement(quantity).sendKeys(value);
+	 }
+	 
+	 public void clickAddCartButton() {
+		 clickOn(addCartButton);
+	 }
+	
+	 public CartPage clickOnViewCart() {
+			try {
+				if(findWebElement(modalContent)!=null) clickOn(viewCartButton);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			return new CartPage();
+			
+		}
 
 
 		
