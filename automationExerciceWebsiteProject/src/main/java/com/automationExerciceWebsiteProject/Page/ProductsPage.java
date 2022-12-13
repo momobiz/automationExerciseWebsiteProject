@@ -17,6 +17,7 @@ public class ProductsPage extends BasePage {
 	
 	By searchProduct=By.cssSelector("#search_product");
 	By searchButton=By.xpath("//button[@id='submit_search']");
+	
 	By modalContent=By.xpath("//div[@class='modal-content']");
 	By shoppingButton=By.xpath("//button[@class='btn btn-success close-modal btn-block']");
 	By viewCartButton=By.xpath("//u[contains(text(),'View Cart')]");

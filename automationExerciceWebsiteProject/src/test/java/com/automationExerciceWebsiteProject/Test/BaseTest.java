@@ -18,7 +18,9 @@ import com.automationExerciceWebsiteProject.Page.DeleteAccountPage;
 import com.automationExerciceWebsiteProject.Page.EnterYourContactInformationPage;
 import com.automationExerciceWebsiteProject.Page.GetInTouchPage;
 import com.automationExerciceWebsiteProject.Page.HomePage;
+import com.automationExerciceWebsiteProject.Page.PayementPage;
 import com.automationExerciceWebsiteProject.Page.ProductDetailsPage;
+import com.automationExerciceWebsiteProject.Page.CategoryPage;
 import com.automationExerciceWebsiteProject.Page.ProductsPage;
 import com.automationExerciceWebsiteProject.Page.SearchResultPage;
 import com.automationExerciceWebsiteProject.Page.SignupLoginPage;
@@ -38,6 +40,8 @@ public abstract class BaseTest {
 	public static ProductDetailsPage productDetailsPage;
 	public static SearchResultPage searchResultPage;
 	public static CartPage cartPage;
+	public static PayementPage payementPage;
+	public static CategoryPage categoryPage;
 	
     public static SoftAssert softAssert;
 	public static Properties prop;

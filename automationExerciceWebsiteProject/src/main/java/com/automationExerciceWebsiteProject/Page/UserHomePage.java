@@ -8,6 +8,7 @@ public class UserHomePage extends BasePage {
 	By deleteAccountButton = By.cssSelector(".navbar-nav > li:nth-child(5) > a:nth-child(1)");
     
 	By logoutButton=By.xpath("//a[contains(text(),'Logout')]");
+	By cartButton=By.xpath("//a[contains(text(),'Cart')]");
 	
 	
 	public String loggedInAsUsername() {
@@ -25,5 +26,10 @@ public class UserHomePage extends BasePage {
 	
 			
 	}
+	public CartPage clickOnCartButton() {
+		clickOn(cartButton);
+		return new CartPage();
+	}
+	
 
 }
