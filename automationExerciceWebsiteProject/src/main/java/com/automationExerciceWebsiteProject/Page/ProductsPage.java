@@ -22,8 +22,28 @@ public class ProductsPage extends BasePage {
 	By shoppingButton=By.xpath("//button[@class='btn btn-success close-modal btn-block']");
 	By viewCartButton=By.xpath("//u[contains(text(),'View Cart')]");
 	
+	MenuElementPage menuElementPage;
+	
+	public ProductsPage() {
+		menuElementPage=new MenuElementPage();
+	}
 	
 	
+	public MenuElementPage getMenuElementPage() {
+		return menuElementPage;
+	}
+
+
+	private SearchResultPage searchResultPage;
+	
+
+	
+	public SearchResultPage getSearchResultPage() {
+		return searchResultPage;
+	}
+
+
+
 	public void moveToCopyright() {
 		moveToWebElement(copyright);
 		
@@ -53,11 +73,19 @@ public class ProductsPage extends BasePage {
 		
 		
 	}
-	public SearchResultPage searchProduct(String productName) {
+//	public SearchResultPage searchProduct(String productName) {
+//		moveToWebElement(searchProduct);
+//		findWebElement(searchProduct).sendKeys(productName);
+//		clickOn(searchButton);
+//		return new SearchResultPage();
+//		
+//	}
+	
+	public void searchProduct(String productName) {
 		moveToWebElement(searchProduct);
 		findWebElement(searchProduct).sendKeys(productName);
 		clickOn(searchButton);
-		return new SearchResultPage();
+		searchResultPage=new SearchResultPage();
 		
 	}
 	public void addProductToCart(int productNumber) {
@@ -91,6 +119,10 @@ public class ProductsPage extends BasePage {
 		return new CartPage();
 		
 	}
+	
+	
+	
+
 	
 	
 	

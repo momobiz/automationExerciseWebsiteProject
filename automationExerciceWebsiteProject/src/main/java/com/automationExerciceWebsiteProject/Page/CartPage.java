@@ -18,16 +18,27 @@ public class CartPage extends BasePage{
 	By textAreaSpace=By.cssSelector(".form-control");
 	By placeOrderButton=By.xpath("//a[@class='btn btn-default check_out']");
 	
+	MenuElementPage menuElementPage;
+	
+	public CartPage() {
+		menuElementPage=new MenuElementPage();
+	}
 	
 	
 	
+	
+	public MenuElementPage getMenuElementPage() {
+		return menuElementPage;
+	}
+
+
 	public int getNumberOfProductInCart() {
 		List<WebElement> productsInCart=new ArrayList<WebElement>();
 		productsInCart=findWebElements(products);
 		return productsInCart.size();
 	}
 	
-	public List getProductsInfo() {
+	public List<String> getProductsInfo() {
 		List<WebElement> productsInCart=new ArrayList<WebElement>();
 		productsInCart=findWebElements(products);
 		List<String> productsInfo=new ArrayList<String>();

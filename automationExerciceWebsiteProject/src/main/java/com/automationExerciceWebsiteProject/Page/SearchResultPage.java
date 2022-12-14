@@ -14,6 +14,9 @@ public class SearchResultPage extends BasePage{
 	By featureItems=By.xpath("//div[@class='features_items']");
 	
 	
+	
+	
+	
 	public String searchedProductsIsVisible() {
 		return findWebElement(searchedProductsMessage).getText();
 		
@@ -36,5 +39,17 @@ public class SearchResultPage extends BasePage{
 		
 		
 	}
+	
+	public int getNumberOfProductsDisplayedCorrespondingToSearchKey(String key) {
+		
+		int numberOfProductsCorrespondingTosearchKey=0;
+		List<String> displayedProducts=getProductsRelatedTosearch();
+		for(String product :displayedProducts) {
+			if (product.contains(key) ) numberOfProductsCorrespondingTosearchKey++;
+		}
+		return numberOfProductsCorrespondingTosearchKey;
+	}
+	
+	
 
 }

@@ -17,21 +17,22 @@ public class ViewCategoryProductsTest extends BaseTest{
 		softAssert.assertTrue(homePage.categoryIsVisible());
 		
 //	    4. Click on 'Women' categoryq
-		homePage.clickOnCategory("women");
-		
-//	    5. Click on any category link under 'Women' category, for example: Tops
-		categoryPage= homePage.chooseOneCategory("tops");
+//		homePage.clickOnCategory("women");
+		homePage.getMenuCategoriesPage().clickOnCategory("women");
+		categoryPage=homePage.getMenuCategoriesPage().chooseOneCategory("tops");
 		
 //	    6. Verify that category page is displayed and confirm text 'WOMEN - TOPS PRODUCTS'
 		String category=categoryPage.getCategoryName();
 		softAssert.assertEquals(category,"WOMEN - TOPS PRODUCTS");
 		
-//	    7. On left side bar, click on any sub-category link of 'Men' category
-		categoryPage.clickOnCategory("Men");
-		categoryPage=categoryPage.chooseOneCategory("jeans");
+//	    7. On left side bar, click on any sub-category link of 'Men' category	
+		categoryPage.getMenuCategoriesPage().clickOnCategory("Men");
+		categoryPage=categoryPage.getMenuCategoriesPage().chooseOneCategory("jeans");
+		
 		
 //	    8. Verify that user is navigated to that category page
 		softAssert.assertEquals(categoryPage.getCategoryName(),"MEN - JEANS PRODUCTS");
+		
 
 
 		

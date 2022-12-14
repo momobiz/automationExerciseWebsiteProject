@@ -30,23 +30,22 @@ public class SearchProductTest extends BaseTest{
 								productsPage.idOfSubscribeEmail());
 //		
 //	    6. Enter product name in search input and click search button
-		searchResultPage=productsPage.searchProduct("jeans");
+		productsPage.searchProduct("jeans");
 		
 //	    7. Verify 'SEARCHED PRODUCTS' is visible
-		softAssert.assertEquals(searchResultPage.searchedProductsIsVisible(),"SEARCHED PRODUCTS");
+		softAssert.assertEquals(productsPage.getSearchResultPage().searchedProductsIsVisible(),"SEARCHED PRODUCTS");
 		
 //	    8. Verify all the products related to search are visible
-		int numberOfProductAppeared=searchResultPage.getNumberOfProductsCorrespondingToReseachKey();
-//		System.out.println("numberOfProductAppeared="+numberOfProductAppeared);
+		int numberOfProductAppeared=productsPage.getSearchResultPage().getNumberOfProductsCorrespondingToReseachKey();
+//		
 		
 		int numberOfProductsCorrespondingToReseachKey=0;
-		List<String> products=searchResultPage.getProductsRelatedTosearch();
+		List<String> products=productsPage.getSearchResultPage().getProductsRelatedTosearch();
 		for(String product:products) {
 			
 			if(product.contains("jeans")) numberOfProductsCorrespondingToReseachKey++;
 		}
-//		System.out.println("numberOfProductsCorrespondingToReseachKey="+numberOfProductsCorrespondingToReseachKey);
-		
+
 		softAssert.assertEquals(numberOfProductAppeared, numberOfProductsCorrespondingToReseachKey);
 		
    }
