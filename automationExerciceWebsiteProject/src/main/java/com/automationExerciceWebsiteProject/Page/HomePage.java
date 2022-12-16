@@ -20,7 +20,11 @@ public class HomePage extends BasePage {
 	By shoppingButton = By.xpath("//button[@class='btn btn-success close-modal btn-block']");
 
 	By featureItems = By.xpath("//div[@class='features_items']");
+	By recommendedItems=By.xpath("//h2[contains(text(),'recommended items')]");
+	By subscription=By.xpath("//h2[contains(text(),'Subscription')]");
 	
+	
+	private RecommendedProductsPage recommendedProductsPage;
 	private MenuCategoriesPage  menuCategoriesPage;
 	
 
@@ -31,10 +35,17 @@ public class HomePage extends BasePage {
 		driver.manage().window().maximize();
 		
 		menuCategoriesPage=new MenuCategoriesPage();
+		recommendedProductsPage=new RecommendedProductsPage();
 
 	}
 	
 	
+	
+
+	public RecommendedProductsPage getRecommendedProductsPage() {
+		return recommendedProductsPage;
+	}
+
 
 	public MenuCategoriesPage getMenuCategoriesPage() {
 		return menuCategoriesPage;
@@ -108,6 +119,15 @@ public class HomePage extends BasePage {
 	public boolean categoryIsVisible() {
 		return isDisplayed(menuCategoriesPage.getCategoryMenu());
 	}
+	
+	public void scrollRecommendedItems() {
+		scrollToWebElement(recommendedItems);
+	}
+	public boolean recommendedItemsIsDisplayed() {
+		return isDisplayed(recommendedItems);
+	}
+	
+
 
 
 }

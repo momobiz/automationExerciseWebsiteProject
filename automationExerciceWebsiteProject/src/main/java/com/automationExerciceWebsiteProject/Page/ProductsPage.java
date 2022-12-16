@@ -119,6 +119,19 @@ public class ProductsPage extends BasePage {
 		return new CartPage();
 		
 	}
+ public ProductDetailsPage viewProduct(int productNumber) {
+	 
+		String str="./child::div[@class='col-sm-4'][%s]";
+		String str2=String.format(str,productNumber);
+		
+		WebElement product=findWebElement(featureItems).findElement(By.xpath(str2));
+		scrollToWebElement(product);
+		moveToWebElement(product);
+		WebElement viewProductButton=findWebElement(featureItems).findElement(By.xpath(str2+"/div/div[2]/ul/li/a"));
+		clickOn(viewProductButton);
+		return new ProductDetailsPage();
+		 
+	 }
 	
 	
 	

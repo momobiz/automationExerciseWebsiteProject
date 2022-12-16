@@ -15,6 +15,13 @@ public class ProductDetailsPage extends BasePage{
 	 By modalContent=By.xpath("//div[@class='modal-content']");
 	 By viewCartButton=By.xpath("//u[contains(text(),'View Cart')]");
 	 
+	 By writeYourReview=By.xpath("//a[contains(text(),'Write Your Review')]");
+	 By yourName=By.cssSelector("#name");
+	 By yourEmailAdress=By.cssSelector("#email");
+	 By yourReview=By.cssSelector("#review");
+	 By submitButton=By.cssSelector("#button-review");
+	 By successMessageElement=By.xpath("//span[@style='font-size: 20px;']");
+	 
 	 public boolean productNameIsVisible() {
 		 WebElement name=findWebElement(productInformation).findElement(By.xpath("child::h2"));
 		 return !name.getText().isEmpty(); 
@@ -62,6 +69,26 @@ public class ProductDetailsPage extends BasePage{
 			return new CartPage();
 			
 		}
+	 public boolean writeYourReviewIsVisible() {
+		 return isDisplayed(writeYourReview);
+	 }
+	 
+	 public void addReview(String name, String email, String review) {
+		 fillInput(yourName, name);
+		 fillInput(yourEmailAdress, email);
+		 fillInput(yourReview, review);
+		 scrollToWebElement(submitButton);
+		 clickOn(submitButton);
+		 
+	 }
+	 public String getSuccessMessage() {
+		 String str=null;
+		 if(isDisplayed(successMessageElement)) 
+			 str=findWebElement(successMessageElement).getAttribute("innerHTML");
+		 return str;
+	 }
+	 
+	
 
 
 		

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.automationExerciceWebsiteProject.Test.ViewCategoryProductsTest">
+      <class name="com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest">
         <methods>
           <include name="afterMethod"/>
-          <include name="viewCategoryProducts"/>
           <include name="beforeMethod"/>
+          <include name="addToCartFromRecommendedItems"/>
         </methods>
-      </class> <!-- com.automationExerciceWebsiteProject.Test.ViewCategoryProductsTest -->
+      </class> <!-- com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

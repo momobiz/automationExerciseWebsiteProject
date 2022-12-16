@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-13T13:13:36 CET" name="Default suite" finished-at="2022-12-13T13:15:25 CET" duration-ms="109237">
+  <suite started-at="2022-12-16T13:09:48 CET" name="Default suite" finished-at="2022-12-16T13:11:09 CET" duration-ms="80839">
     <groups>
     </groups>
-    <test started-at="2022-12-13T13:13:36 CET" name="Default test" finished-at="2022-12-13T13:15:25 CET" duration-ms="109237">
-      <class name="com.automationExerciceWebsiteProject.Test.ViewCategoryProductsTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.ViewCategoryProductsTest@359f7cdf]" started-at="2022-12-13T13:13:36 CET" name="beforeMethod" finished-at="2022-12-13T13:15:07 CET" duration-ms="90709" status="PASS">
+    <test started-at="2022-12-16T13:09:48 CET" name="Default test" finished-at="2022-12-16T13:11:09 CET" duration-ms="80839">
+      <class name="com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest@359f7cdf]" started-at="2022-12-16T13:09:48 CET" name="beforeMethod" finished-at="2022-12-16T13:11:03 CET" duration-ms="75450" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="viewCategoryProducts()[pri:0, instance:com.automationExerciceWebsiteProject.Test.ViewCategoryProductsTest@359f7cdf]" started-at="2022-12-13T13:15:07 CET" name="viewCategoryProducts" finished-at="2022-12-13T13:15:25 CET" duration-ms="18494" status="PASS">
+        <test-method signature="addToCartFromRecommendedItems()[pri:0, instance:com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest@359f7cdf]" started-at="2022-12-16T13:11:03 CET" name="addToCartFromRecommendedItems" finished-at="2022-12-16T13:11:09 CET" duration-ms="5358" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewCategoryProducts -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.ViewCategoryProductsTest@359f7cdf]" started-at="2022-12-13T13:15:25 CET" name="afterMethod" finished-at="2022-12-13T13:15:25 CET" duration-ms="0" status="PASS">
+        </test-method> <!-- addToCartFromRecommendedItems -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest@359f7cdf]" started-at="2022-12-16T13:11:09 CET" name="afterMethod" finished-at="2022-12-16T13:11:09 CET" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.automationExerciceWebsiteProject.Test.ViewCategoryProductsTest -->
+      </class> <!-- com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
