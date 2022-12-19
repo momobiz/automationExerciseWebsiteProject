@@ -26,7 +26,7 @@ public class HomePage extends BasePage {
 	
 	private RecommendedProductsPage recommendedProductsPage;
 	private MenuCategoriesPage  menuCategoriesPage;
-	
+
 
 	public HomePage() {
 		launchBrowser();
@@ -36,6 +36,8 @@ public class HomePage extends BasePage {
 		
 		menuCategoriesPage=new MenuCategoriesPage();
 		recommendedProductsPage=new RecommendedProductsPage();
+		
+		
 
 	}
 	

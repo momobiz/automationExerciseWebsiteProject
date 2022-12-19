@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-16T13:09:48 CET" name="Default suite" finished-at="2022-12-16T13:11:09 CET" duration-ms="80839">
+  <suite started-at="2022-12-19T10:37:31 CET" name="Default suite" finished-at="2022-12-19T10:38:26 CET" duration-ms="54531">
     <groups>
     </groups>
-    <test started-at="2022-12-16T13:09:48 CET" name="Default test" finished-at="2022-12-16T13:11:09 CET" duration-ms="80839">
-      <class name="com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest@359f7cdf]" started-at="2022-12-16T13:09:48 CET" name="beforeMethod" finished-at="2022-12-16T13:11:03 CET" duration-ms="75450" status="PASS">
+    <test started-at="2022-12-19T10:37:31 CET" name="Default test" finished-at="2022-12-19T10:38:26 CET" duration-ms="54531">
+      <class name="com.automationExerciceWebsiteProject.Test.VerifyAddressDetailsInCheckoutPageTest">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.VerifyAddressDetailsInCheckoutPageTest@359f7cdf]" started-at="2022-12-19T10:37:31 CET" name="beforeMethod" finished-at="2022-12-19T10:37:54 CET" duration-ms="22727" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="addToCartFromRecommendedItems()[pri:0, instance:com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest@359f7cdf]" started-at="2022-12-16T13:11:03 CET" name="addToCartFromRecommendedItems" finished-at="2022-12-16T13:11:09 CET" duration-ms="5358" status="PASS">
+        <test-method signature="verifyAddressDetailsInCheckoutPage()[pri:0, instance:com.automationExerciceWebsiteProject.Test.VerifyAddressDetailsInCheckoutPageTest@359f7cdf]" started-at="2022-12-19T10:37:54 CET" name="verifyAddressDetailsInCheckoutPage" finished-at="2022-12-19T10:38:26 CET" duration-ms="31760" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addToCartFromRecommendedItems -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest@359f7cdf]" started-at="2022-12-16T13:11:09 CET" name="afterMethod" finished-at="2022-12-16T13:11:09 CET" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyAddressDetailsInCheckoutPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.automationExerciceWebsiteProject.Test.VerifyAddressDetailsInCheckoutPageTest@359f7cdf]" started-at="2022-12-19T10:38:26 CET" name="afterMethod" finished-at="2022-12-19T10:38:26 CET" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- com.automationExerciceWebsiteProject.Test.AddToCartFromRecommendedItemsTest -->
+      </class> <!-- com.automationExerciceWebsiteProject.Test.VerifyAddressDetailsInCheckoutPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

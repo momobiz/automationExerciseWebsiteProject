@@ -10,7 +10,18 @@ public class UserHomePage extends BasePage {
 	By logoutButton=By.xpath("//a[contains(text(),'Logout')]");
 	By cartButton=By.xpath("//a[contains(text(),'Cart')]");
 	
+	private FeaturesItemsElement featuresItemElement;
 	
+	public UserHomePage() {
+		featuresItemElement=new FeaturesItemsElement();
+	}
+		
+	
+	public FeaturesItemsElement getFeaturesItemElement() {
+		return featuresItemElement;
+	}
+
+
 	public String loggedInAsUsername() {
 		return findWebElement(loginAs).getText();
 

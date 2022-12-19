@@ -27,6 +27,8 @@ public abstract class BasePage {
 	public static JavascriptExecutor  js;
 	public static Select select;
 	
+
+	
 	public static void launchBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver=new ChromeDriver();

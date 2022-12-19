@@ -18,6 +18,11 @@ public class CartPage extends BasePage{
 	By textAreaSpace=By.cssSelector(".form-control");
 	By placeOrderButton=By.xpath("//a[@class='btn btn-default check_out']");
 	
+	// delivery adress
+	
+	By deliveryAdress=By.xpath("//ul[@id='address_delivery']/li");
+	
+	
 	MenuElementPage menuElementPage;
 	
 	public CartPage() {
@@ -89,6 +94,16 @@ public class CartPage extends BasePage{
 		clickOn(placeOrderButton);
 		return new PayementPage();
 		
+	}
+	
+	public List<String> getDeliveryAdress() {
+		List<WebElement> coordinatesElements= findWebElements(deliveryAdress);
+		List<String> coordinates=new ArrayList<String>();
+		for(WebElement coordinateElement:coordinatesElements) {
+			coordinates.add(coordinateElement.getText());
+			
+		}
+		return coordinates;
 	}
 	
 	
